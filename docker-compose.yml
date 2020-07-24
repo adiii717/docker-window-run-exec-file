@@ -1,0 +1,6 @@
+myapp:
+  image: python:3.7
+  volumes: 
+    - $PWD/:/app
+  working_dir: /app
+  command: bash -c 'chmod +x start.sh && ./start.sh'
